@@ -1,0 +1,56 @@
+/* Universal Sytles */
+
+html {
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* Header Sytles */
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+/* sytles used for logo */
+
+.container {
+  background-color: green;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding: 0 1rem 0 .5rem;
+}
+
+.logo span {
+  padding: 0.66rem 0;
+}
+
+/* sytles used for banner section of the header. */
+
+.banner {
+  background-image: url("./pics/background.jpeg");
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex; 
+}
+
+.arrival {
+
+}
