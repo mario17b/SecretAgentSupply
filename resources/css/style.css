@@ -5,7 +5,6 @@ html {
 }
 
 body {
-  display: flex;
   flex-direction: column;
   color: white;
 }
@@ -13,23 +12,19 @@ body {
 /* Header Sytles */
 
 header {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
+
 }
 
 /* sytles used for logo */
 
-.container {
-  background-color: green;
-}
 
 .logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   background-color: black;
+}
+
+.logo .container {
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
@@ -41,6 +36,12 @@ header {
   padding: 0.66rem 0;
 }
 
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
 /* sytles used for banner section of the header. */
 
 .banner {
@@ -48,9 +49,14 @@ header {
   height: 25rem;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex; 
 }
 
-.arrival {
+.banner .container {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: firebrick;
 
 }
