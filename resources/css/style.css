@@ -65,16 +65,23 @@ header {
 
 .banner .container span {
   font-size: 1rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
 }
 
 .banner h1 {
   font-size: 2rem;
+  padding-left: 3rem;
+  padding-top: .25rem;
 }
 
 .btext {
-  padding-top: 9rem;
+  padding: 2rem 3rem;
   width: 20rem;
+  background-color: black;
+  margin-top: 9rem;
 }
+
 nav {
   background-color: firebrick;
 }
