@@ -93,7 +93,9 @@ nav .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: .75rem 0;
 }
+
 footer .container {
   flex-direction: row;
   align-items: center;
