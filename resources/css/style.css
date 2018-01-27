@@ -63,6 +63,8 @@ header {
   flex-direction: column;
 }
 
+/* sytles used for text section of the banner  */
+
 .banner .container span {
   font-size: 1rem;
   padding-left: 3rem;
@@ -81,11 +83,17 @@ header {
   background-color: black;
   margin-top: 9rem;
 }
+/* sytles used for nav section of the header. */
 
 nav {
   background-color: firebrick;
 }
 
+nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 footer .container {
   flex-direction: row;
   align-items: center;
