@@ -6,6 +6,9 @@ html {
 
 body {
   flex-direction: column;
+}
+
+.container {
   color: white;
 }
 
@@ -39,8 +42,8 @@ header {
 .container {
   width: 960px;
   margin: 0 auto;
+  border: 1px solid black;
 }
-
 
 /* sytles used for banner section of the header. */
 
@@ -49,14 +52,38 @@ header {
   height: 25rem;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
 }
 
 .banner .container {
   display: flex;
+  align-items: left;
+  font-family: Helvetica;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.banner .container span {
+  font-size: 1rem;
+}
+
+.banner h1 {
+  font-size: 2rem;
+}
+
+.btext {
+  padding-top: 9rem;
+  width: 20rem;
+}
+nav {
+  background-color: firebrick;
+}
+
+footer .container {
+  flex-direction: row;
   align-items: center;
 }
 
-nav {
-  background-color: firebrick;
-
+footer {
+  display: flex;
 }
