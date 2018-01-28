@@ -1,108 +1,123 @@
-/* Universal Sytles */
+/* Universal Styles */
 
 html {
   font-size: 18px;
 }
 
 body {
-  flex-direction: column;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+h4 {
+  font-weight: bold;
 }
 
 .container {
-  color: white;
-}
-
-/* Header Sytles */
-
-header {
-
-}
-
-/* sytles used for logo */
-
-
-.logo {
-  background-color: black;
-}
-
-.logo .container {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 1.5rem;
-  padding: 0 1rem 0 .5rem;
-}
-
-.logo span {
-  padding: 0.66rem 0;
-}
-
-.container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
-/* sytles used for banner section of the header. */
+/* Company Header */
 
-.banner {
-  background-image: url("./pics/background.jpeg");
-  height: 25rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-}
-
-.banner .container {
-  display: flex;
-  align-items: left;
-  font-family: Helvetica;
-  font-weight: bold;
-  flex-direction: column;
-}
-
-/* sytles used for text section of the banner  */
-
-.banner .container span {
-  font-size: 1rem;
-  padding-left: 3rem;
-  padding-top: 2rem;
-}
-
-.banner h1 {
-  font-size: 2rem;
-  padding-left: 3rem;
-  padding-top: .25rem;
-}
-
-.btext {
-  padding: 2rem 3rem;
-  width: 20rem;
+.company {
   background-color: black;
-  margin-top: 9rem;
+  color: white;
 }
-/* sytles used for nav section of the header. */
+
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: .66rem 0 .66rem 0.5rem;
+}
+
+.company img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+/* Main Banner */
+
+.main-banner {
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.headline {
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+  background-color: black;
+  color: white;
+}
+
+.headline h1 {
+  margin: 0.25rem 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+
+  .headline h4 {
+    font-size: .77rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+  }
+}
+
+/* Navigation Bar */
 
 nav {
   background-color: firebrick;
+  color: white;
 }
 
-nav .container {
+nav ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: .75rem 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
 }
 
-/* sytles used for product section of the header. */
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Products and Business Information Section */
 
 .products,
 .business-info {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
-  margin-bottom: 4rem;
 }
 
 .product {
@@ -141,22 +156,46 @@ nav .container {
   color: white;
 }
 
-.business-info {
-  color: black;
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
 }
 
-/* sytles used for footer section of the header. */
+@media only screen and (max-width: 470px) {
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
 
-footer .container {
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
+/* Footer */
+
+footer {
   padding: 5rem 0;
   margin-top: 4rem;
   background-color: black;
   color: white;
 }
 
-footer {
-  background-color: black;
-}
 
 @media only screen and (max-width: 470px) {
   footer {
